@@ -22,4 +22,4 @@ library(ReadImages)
 
 London <- GetMap(center=c(51.514910,-0.126858), zoom =12, destfile = "London.jpg", maptype = "terrain")
 data <- read.table(file.choose(), sep=",")
-londonMap(data)
+londonMap(London, data)
