@@ -1,15 +1,14 @@
 # Warning: untested
 
-londonMap <- function(data)
+londonMap <- function(city, data)
 {
-	London <- GetMap(center=c(51.514910,-0.126858), zoom =12, destfile = "London.jpg", maptype = "terrain")
-	colors <- c("darkred", "darkblue", "darkgreen", "black", "darkorange", "purple")
-	
+	colors <- c("darkred", "darkblue", "darkgreen", "black", "darkorange", "purple")	
 	par(omi=c(0,0,0,0), mai=c(0,0,0,0))
-	PlotOnStaticMap(London, data$lat[1], data$lon[1], col=colors[data$group[1]], cex=1, pch=19)
+	
+	PlotOnStaticMap(city, data$lat[1], data$lon[1], col=colors[data$group[1]], cex=1, pch=19)
 	for (i in 2:length(data$lat))
 	{
-		PlotOnStaticMap(London, data$lat[1], data$lon[1], col=colors[data$group[1]], cex=1, add=T)
+		PlotOnStaticMap(city, data$lat[1], data$lon[1], col=colors[data$group[1]], cex=1, add=T)
 	}
 }
 
@@ -21,5 +20,6 @@ londonMap <- function(data)
 library(RgoogleMaps)
 library(ReadImages)
 
+London <- GetMap(center=c(51.514910,-0.126858), zoom =12, destfile = "London.jpg", maptype = "terrain")
 data <- read.table(file.choose(), sep=",")
 londonMap(data)
