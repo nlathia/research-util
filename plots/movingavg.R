@@ -4,9 +4,9 @@
 #	2. Data is over 24 hours (hence labels, xlim)
 #	3. Moving Average is 10 sample, 2-sided
 
-plotWithMovingAvg <- function(data, xlab, ylab)
+plotWithMovingAvg <- function(data, xlab, ylab, title)
 {
-	plot(data$X, data$Y, col=grey(.5), type="l", axes=F, xlim=c(0,24), xlab=xlab, ylab=ylab)
+	plot(data$X, data$Y, col=grey(.5), type="l", axes=F, xlim=c(0,24), xlab=xlab, ylab=ylab, main=title)
 	axis(1, labels=0:24, at=0:24)
 	axis(2)
 	box()
@@ -21,4 +21,5 @@ plotWithMovingAvg <- function(data, xlab, ylab)
 data <- read.table(file.choose(), sep=",", header=T)
 xlab = ""
 ylab = ""
-plotWithMovingAvg(data, xlab, ylab)
+title = ""
+plotWithMovingAvg(data, xlab, ylab, title)
