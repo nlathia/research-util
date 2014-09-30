@@ -1,8 +1,10 @@
- A bunch of random R scripts used for images in research papers, for example:
- http://www.cl.cam.ac.uk/~nkl25/publications/papers/lathia_transport_research_c.pdf
- http://www.cl.cam.ac.uk/~nkl25/publications/papers/lathia_pervasive2012.pdf
+Various scripts used to visualise data. Used in the following publications:
 
- Copyright (c) 2012, University of Cambridge
+* [pdf](http://www.cl.cam.ac.uk/~nkl25/publications/papers/lathia_ubicomp13.pdf) Contextual Dissonance: Design Bias in Sensor-Based Experience Sampling Methods 
+* [pdf](http://www.cl.cam.ac.uk/~nkl25/publications/papers/lathia_transport_research_c.pdf) Measuring the Impact of Opening the London Shared Bicycle Scheme to Casual Users 
+* [pdf](http://www.cl.cam.ac.uk/~nkl25/publications/papers/lathia_pervasive2012.pdf) The Hidden Image of the City: Sensing Community Well-Being from Urban Mobility 
+
+ Copyright (c) 2014, University of Cambridge
  Neal Lathia, neal.lathia@cl.cam.ac.uk
 
 Permission to use, copy, modify, and/or distribute this software for any
