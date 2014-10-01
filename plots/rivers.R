@@ -29,9 +29,9 @@ ns = list(
         J=list(col="#BCEE68", srt=0)
 )
 
-plot_file_name <- ''
-nodes <- read.table(file.choose(), sep=',', header=T)
-edges <- read.table(file.choose(), sep=',', header=T)
+plot_file_name <- 'example_output/river.pdf'
+nodes <- read.table('example_data/nodes.csv', sep=',', header=T)
+edges <- read.table('example_data/edges.csv', sep=',', header=T)
 pdf(plot_file_name)
 plot(makeRiver(nodes, edges, node_styles=ns))
 dev.off()
