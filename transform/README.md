@@ -7,7 +7,7 @@ each data file is named \*_data-type_\*.json and contains a single JSON object p
 
 $ python to_csv.py /path/to/your/data_file.json
 
-OR
+OR (for multiple files)
 
 $ python to_csv.py /path/to/your/files/
 

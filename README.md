@@ -27,11 +27,16 @@ These plots appear in the following publications:
 * [[pdf](http://nlathia.github.io/papers/lathia_ubicomp13.pdf)] "Contextual Dissonance: Design Bias in Sensor-Based Experience Sampling Methods" 
 * [Under Submission] "Happy People Live Active Lives"
 
-## Data Conversion
+## Data Formatting
 In the transform/ directory:
 
 1. Converting JSON data from the [ES Android Library](http://emotionsense.github.io/sensors.html) to CSV.
 
+
+## Data Processing
+In the process/ directory:
+
+1. Extracting the standard deviation of the magnitude vector from a file containing ES accelerometer JSON samples.
 
 
 ## License
