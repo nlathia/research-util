@@ -1,7 +1,6 @@
 # Research Util
 
-## About
-This repository contains various Python/R scripts used to visualise and flatten data.
+This repository contains various Python/R scripts used to visualise, preprocess, and flatten research data.
 
 ## Maps
 
