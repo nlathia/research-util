@@ -1,19 +1,18 @@
 from sensor import Sensor
 from abc import ABCMeta
 
-CONTENT_LIST = 'contentList'
-
 
 class ContentReader(Sensor):
 
     __metaclass__ = ABCMeta
+    CONTENT_LIST = 'contentList'
 
     def __init__(self):
         pass
 
     def flatten(self, sample, columns):
         user = [sample.get(u, None) for u in super(ContentReader, self).header()]
-        for entry in sample.get(CONTENT_LIST, []):
+        for entry in sample.get(ContentReader.CONTENT_LIST, []):
             content = [entry.get(c, None) for c in columns]
             yield user + content
 
