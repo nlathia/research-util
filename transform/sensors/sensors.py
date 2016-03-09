@@ -1,4 +1,5 @@
 from activity import Accelerometer, StepCounter
+from app import Interaction
 from device import Battery
 from contentreader import CallContentReader, SMSContentReader
 from location import Location, WiFiScan
@@ -12,7 +13,8 @@ SENSORS = {
     SMSContentReader.TYPE: SMSContentReader(),
     Location.TYPE: Location(),
     WiFiScan.TYPE: WiFiScan(),
-    StepCounter.TYPE: StepCounter()
+    StepCounter.TYPE: StepCounter(),
+    Interaction.TYPE: Interaction()
 }
 
 
