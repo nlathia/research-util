@@ -41,6 +41,9 @@ def get_data_type(input_file):
     if '.json' in input_file:
         data_type = path.split(input_file)[1]
         data_type = data_type[data_type.index('_')+1:data_type.rindex('_')]
+        if len(data_type) == 0:
+            logger.info('File names are expected to be *_sensor_*.json')
+            raise Exception('No sensor type in file name: '+input_file)
         logger.info('Parsing file with sensor type: ' + data_type)
         return get_sensor(data_type)
     else:
